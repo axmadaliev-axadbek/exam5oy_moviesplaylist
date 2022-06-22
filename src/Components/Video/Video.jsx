@@ -50,7 +50,7 @@ const Video = () => {
                 </Stack>
                 <Slider className="timeRange" value={time} onChange={(event, newValue) => videoRef.current.currentTime = (newValue / 100) * videoRef.current.duration} />
 
-                <img src={fullScreen} className='fullScreen' onClick={() => blockRef.current.classList.toggle('full')} />
+                <img alt='title' src={fullScreen} className='fullScreen' onClick={() => blockRef.current.classList.toggle('full')} />
             </div>
         </div>
     );

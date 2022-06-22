@@ -1,4 +1,4 @@
-import { Box, CircularProgress, Pagination, Stack } from '@mui/material';
+import {   Pagination, Stack } from '@mui/material';
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import searchIcon from "../../Assets/svg/search.svg";
 import Videoitem from '../../Components/VideoItem/VideoItem';
@@ -6,7 +6,7 @@ import { MovieContext } from '../../Provider/MovieProvider';
 import "./Search.scss"
 
 const Search = () => {
-    const { title, loading } = useContext(MovieContext)
+    const { title } = useContext(MovieContext)
     const [inputValue, setInputValue] = useState(title)
     const [movies, setMovies] = useState([])
     const [page, setPage] = useState(1)

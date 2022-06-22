@@ -1,4 +1,4 @@
-import React, { useState, useContext, useRef } from 'react';
+import React, {  useContext, useRef } from 'react';
 import "./Login.scss";
 import Elips2 from "../../Assets/png/Ellipse 1.png";
 import Elips1 from "../../Assets/png/Ellipse 2.png";

@@ -6,7 +6,7 @@ import { MovieContext } from '../../Provider/MovieProvider';
 
 const Home = () => {
 
-    const { movies, loading } = useContext(MovieContext)
+    const { movies } = useContext(MovieContext)
 
     if (!movies.Search) {
         return <div className="container">
